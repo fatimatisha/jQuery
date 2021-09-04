@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="jquery-ui/jquery-ui.css">   
+    <link rel="stylesheet" href="jquery-ui/jquery-ui.structure.css">
+    <link rel="stylesheet" href="jquery-ui/jquery-ui.theme.css">
+   
+    <title>Document</title>
+</head>
+<body>
+    <h2>Draggable Feature in </h2>
+    <div style="border: 1px solid black;">
+        <div class="cube2">cube1</div>
+        <div class="cube2">cube2</div>
+    </div>
+    
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="jquery-ui/jquery-ui.js"></script>
+    <script>
+      $(".cube2").draggable({
+         // asix:'x',
+          containment:"parent",
+          cursor:"grabbing",
+          opacity:0.5,
+          //grid:[300,300],
+          snap:true,
+          snapTolarance:30
+      }); 
+      
+    </script>
+    
+</body>
+</html>

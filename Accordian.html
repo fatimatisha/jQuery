@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="jquery-ui/jquery-ui.css">   
+    <link rel="stylesheet" href="jquery-ui/jquery-ui.structure.css">
+    <link rel="stylesheet" href="jquery-ui/jquery-ui.theme.css">
+   
+    <title>Document</title>
+</head>
+<body>
+   <div class="accordion">
+       <h3>Learn Html</h3>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae voluptates voluptatibus maxime consequatur corrupti autem ab similique sapiente voluptatum libero? Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis quis nemo molestias minima dignissimos vel labore Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid nisi, officiis ab praesentium vero minus corrupti esse distinctio laboriosam mollitia. iste quia nostrum consequuntur.</p>
+
+       <h3>Learn css</h3>
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam in veritatis ullam. Nam reiciendis veritatis quas quasi recusandae necessitatibus libero! Blanditiis quis nemo molestias minima dignissimos vel labore iste quia nostrum consequuntur.</p>
+
+       <h3>Learn javascript</h3>
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis quis nemo molestias minima dignissimos vel labore iste quia nostrum Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore pariatur voluptatibus reprehenderit impedit corrupti, sint natus a, consequatur sit vero nesciunt molestias ea tenetur, commodi enim repellendus. Doloribus, quas excepturi! consequuntur.</p>
+
+       <h3>Learn jquery</h3>
+       <p>Lorem ipsum dolor sit Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat nesciunt corrupti soluta officiis, quas facilis natus eius. Quibusdam, blanditiis voluptates! amet Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum aliquam rerum repellat, consequatur labore pariatur ullam quidem ducimus voluptatum. Delectus reprehenderit nemo at voluptate fuga similique tenetur architecto facilis deserunt. consectetur adipisicing elit. Blanditiis quis nemo Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam maiores atque suscipit voluptatem laboriosam praesentium magni at tempore iure eveniet! molestias minima dignissimos vel labore iste quia nostrum consequuntur.</p>
+       
+
+   </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="jquery-ui/jquery-ui.js"></script>
+    <script>
+
+        //https://api.jqueryui.com/theming/icons/    this is the link of the theme icon
+
+        $(".accordion").accordion({
+            collapsible:true,
+            event:"click",
+            animate:300,
+            active:0,  //it is index number
+            heightStyle:true,
+            icons:{header:"ui-icon-plus",activeHeader:"ui-icon-minus"}
+
+        }
+
+        ); 
+
+
+      
+    </script>
+    
+</body>
+</html>

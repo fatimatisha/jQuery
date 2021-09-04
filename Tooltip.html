@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="jquery-ui/jquery-ui.css">   
+    <link rel="stylesheet" href="jquery-ui/jquery-ui.structure.css">
+    <link rel="stylesheet" href="jquery-ui/jquery-ui.theme.css">
+   
+    <title>Document</title>
+</head>
+<body>
+    <img src="css.png" id="img1" height="250px" width="200px" title="Let's Learn CSS" alt="">
+    <img src="html.png" id="img2" height="250px" width="250px" title="" alt="">
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="jquery-ui/jquery-ui.js"></script>
+    <script>
+          $("#img1").tooltip(
+            {
+                show:{effect:"highlight",duration:2000},   //some effect:"bounce","explode","pulsate","blind"
+                hide:{effect:"explode",duration:2000}  
+            }
+        );
+        $("#img2").tooltip(
+            {
+                track:true,
+                content:"Let's Learn HTML"
+            }
+        );
+
+
+      
+    </script>
+    
+</body>
+</html>

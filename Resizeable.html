@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="jquery-ui/jquery-ui.css">   
+    <link rel="stylesheet" href="jquery-ui/jquery-ui.structure.css">
+    <link rel="stylesheet" href="jquery-ui/jquery-ui.theme.css">
+   
+    <title>Document</title>
+</head>
+<body>
+    <h2>Resizable Feature in </h2>
+    <div class="sort" >
+     <img src="html.png" style="border: 1px solid black;" height="200px" width="200px" alt="">
+    </div>
+    
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="jquery-ui/jquery-ui.js"></script>
+    <script>
+      $("img").resizable({
+          //maxWidth:500,
+          //maxHeight:500,
+          autoHide:true,
+          //distance:200,
+          ghost:true,
+          aspectRatio:true
+         
+      }); 
+      
+    </script>
+    
+</body>
+</html>

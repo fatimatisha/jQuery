@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="jquery-ui/jquery-ui.css">
+    <link rel="stylesheet" href="jquery-ui/jquery-ui.structure.css">
+    <link rel="stylesheet" href="jquery-ui/jquery-ui.theme.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Message Box in jQuery UI</h2>
+    <div id="firstdiv" class="mydiv">
+        <h3>Hello welcome to Jquert Learning </h3>
+        <br>
+        <button id="btn1">Click to show message box</button>
+
+    </div>
+    <button id="btn3">Change Height</button>
+    <br>
+    <div id="messagebox" title="Message Box" class="mydivs">
+        <h3>Title goes here</h3>
+        <img src="html.png" width="50px" height="50px" alt="">
+        <br>
+        <button>Click Me</button>
+    </div>
+
+
+    <div id="mydiv">
+        <h1> Introduction to Jquery and UI </h1>
+    </div>
+    <div>
+        <br>
+        <p>Select a date</p>
+        <input class="input1" type="text">
+    </div>
+    <br>
+    <button id="btn2">Bring Change</button>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="jquery-ui/jquery-ui.js"></script>
+    <script>
+        $("#mydiv").datepicker({
+            numberOfMonths: 2,
+            changeYear: true,
+            changeMonth: true,
+            showWeek: true,
+            weekHeader: "week no.",
+            showOtherMonth: true,
+            minDate: new Date(),
+            maxDate: new Date(2022, 0, 1)
+        });
+        $(".input1").datepicker();
+
+        $("#btn2").click(function () {
+            var height = $("#mydiv").datepicker("option", "numberOfMonths");
+            alert(height);
+        })
+
+        $("#btn1").click(function () {
+            // alert("Button clicked");
+            $("#messagebox").dialog(
+                {
+                    draggable: true,
+                    resizable: true,
+                    height: 300,
+                    width: 300,
+                    modal: false,     //website er element select kora jabe nah
+                    buttons: [
+                        {
+                            text: "Close",
+                            icon: "ui-icon-heart",
+                            click: function () {
+                                $(this).dialog("close");
+                            }
+                        },
+                        {
+                            text: "Ok",
+                            icon: "ui-icon-heart",
+                            click: function () {
+                                $(this).dialog()
+                                {
+                                    $(this).dialog("close");
+                                }
+                            }
+                        }
+
+
+                    ]
+                }
+            );
+        })
+
+
+        ///It is a set method
+        $("#btn3").click(function () {
+            var height = $("#messagebox").dialog("option", "height", 400);
+
+        })
+
+    </script>
+
+</body>
+
+</html>

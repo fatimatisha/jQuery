@@ -1,0 +1,55 @@
+.div1{
+    border: 2px solid brown;
+    padding: 10px;
+    margin: 10px;
+}
+
+.div2{
+    border: 2px solid brown;
+    padding: 20px;
+    margin: 10px;
+
+}
+.div3{
+    border: 2px solid brown;
+    padding: 20px;
+    margin: 10px;
+
+}
+.newdiv1{
+
+    background-color: rgb(214, 16, 165);
+    padding: 30px;
+    
+
+}
+.newdiv2
+{
+    border-radius: 10px;
+}
+.cube{
+    margin: 20px;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    background-color: darkmagenta;
+    opacity: .5;
+}
+.cube2{
+    padding: 20px;
+    margin: 20px;
+    height: 100px;
+    width: 100px;
+     /* position: absolute;  */
+    background-color: darkmagenta;
+    
+}
+.cube3{
+    padding: 20px;
+    margin: 20px;
+    height: 50px;
+    width: 50px;
+     /* position: absolute;  */
+    background-color: darkmagenta;
+    
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="jquery-ui/jquery-ui.css">   
+    <link rel="stylesheet" href="jquery-ui/jquery-ui.structure.css">
+    <link rel="stylesheet" href="jquery-ui/jquery-ui.theme.css">
+   
+    <title>Document</title>
+</head>
+<body>
+    <div id="mydiv"><h1> Introduction to Jquery and UI </h1> </div>
+    <div>
+        <br>
+        <p>Select a date</p>
+        <input class="input1" type="text"></div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="jquery-ui/jquery-ui.js"></script>
+    <script>
+        $("#mydiv").datepicker({
+            numberOfMonths:1,
+            changeYear:true,
+            changeMonth:true,
+            showWeek:true,
+            weekHeader:"week no.",
+            showOtherMonth:true,
+            minDate:new Date(),
+            maxDate:new Date(2022,0,1)
+        });
+        $(".input1").datepicker();
+    </script>
+    
+</body>
+</html>

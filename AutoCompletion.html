@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="jquery-ui/jquery-ui.css">   
+    <link rel="stylesheet" href="jquery-ui/jquery-ui.structure.css">
+    <link rel="stylesheet" href="jquery-ui/jquery-ui.theme.css">
+   
+    <title>Document</title>
+</head>
+<body>
+    <div><label for="">Your City</label>
+        <input type="text" id="input1" placeholder="Enter Your City">
+    </div>
+    
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="jquery-ui/jquery-ui.js"></script>
+    <script>
+        var cities=["Tokyo","Jakarta","Dubai","Manila","New York","Dhaka","Bangkok","Kolkata","Istanbul","Loges","Baghdad"];
+        $("#input1").autocomplete(
+            {
+                source:cities
+
+            },
+            {
+                autoFocus:true,
+                delay:0,
+                minLength:1
+
+            }
+            );
+
+      
+    </script>
+    
+</body>
+</html>
